@@ -153,7 +153,7 @@ ul {
 
 .colors {
 	background-color: #f8f8f8;
-	color: #080808;
+	color: #ec69a6;
 	padding: 0;
 }
 .colors__bg {
@@ -217,8 +217,8 @@ ul {
 	padding: 50px;
 	background-image: url("../images/price_bg-hair.png");
 	background-repeat: no-repeat;
-	background-position: 98% 70%;
-	background-size: 30%;
+	background-position: right top;
+	background-size: 40%;
 	
 }
 
@@ -376,7 +376,7 @@ ul {
 	.colors__bg {
 		background-repeat: repeat-y;
 		background-position-y: 10%;
-		padding-top: 120px;	
+		padding-top: 60px;
 	}
 
 	.price__border {
@@ -412,9 +412,15 @@ ul {
 		block-size: 60px;
 	}
 
+	.colors__palitra {
+		margin: 0;
+		padding: 0;
+		max-width: 100%;
+	}
+
 	.colors__palitra-img img{
 		border-radius: 15%;
-		block-size: 100px;
+		block-size: 89px;
 	}
 }
 
