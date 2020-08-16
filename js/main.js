@@ -1,6 +1,6 @@
 $(function () {
 
-	$('.menu__btn').on('click', function () {
+	$('.hamburger').on('click', function () {
 		$('.header__menu-list').slideToggle();
 	})
 
