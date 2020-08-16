@@ -83,6 +83,73 @@ ul {
 
 }
 
+.hamburger {
+	margin: 0 auto;
+	margin-right: 15px;
+	width: 30px;
+	height: 30px;
+	position: relative;
+	display: none;
+}
+
+.hamburger .bar {
+	padding: 0;
+	width: 30px;
+	height: 4px;
+	background-color: #e71095;
+	display: block;
+	border-radius: 4px;
+	transition: all 0.4s ease-in-out;
+	position: absolute; 
+}
+
+.bar1 {
+	top: 0;
+}
+
+.bar2,
+.bar3 {
+	top: 13.5px;
+}
+
+.bar3 {
+	right: 0;
+}
+
+.bar4 {
+	bottom: 0;
+}
+
+.checkbox1:checked + label > .hamburger1 > .bar1{
+	transform: rotate(45deg);
+	transform-origin: 5%;
+	width: 41px
+}
+
+.checkbox1:checked + label > .hamburger1 > .bar2 {
+	transform: translateX(-40px);
+	background-color: transparent;
+}
+
+.checkbox1:checked + label > .hamburger1 > .bar3 {
+	transform: translateX(40px);
+	background-color: transparent;
+}
+
+.checkbox1:checked + label > .hamburger1 > .bar4 {
+	transform-origin: 5%;
+	transform: rotate(-45deg);
+	width: 41px;
+}
+
+.visuallyHidden {
+	position: absolute; 
+	overflow: hidden; 
+	clip: rect(0 0 0 0); 
+	height: 1px; width: 1px; 
+	margin: -1px; padding: 0; border: 0; 
+}
+
 .menu__btn {
 	width: 50px;
 	height: 17px;
@@ -241,7 +308,13 @@ ul {
 	font-size: 50px;
 	text-align: center;
 	width: 350px;
-	border-bottom: 4px #6c462a solid;
+	color: #4e2e10;
+}
+
+.price__table tr:nth-of-type(2) td {
+	padding-top: 30px;
+	color: #4e2e10;
+	border-bottom: solid 4px #6c462a;
 }
 
 .price__table td {
@@ -251,7 +324,7 @@ ul {
 }
 
 .price__table td:nth-child(2){
-	text-align: right;
+	/* text-align: right; */
 }
 
 .price__cm {
@@ -305,7 +378,7 @@ ul {
 	}
 
 	.header__logo img {
-		margin: 0 0 0 30px;
+		margin: 0 0 0 10px;
 		block-size: 60px;
 		width: 60px;
 	}
@@ -318,12 +391,11 @@ ul {
 		display: none;
 		position: absolute;
 		left: 0;
-		top: 68px;
+		top: 69px;
 
 		background-color: #fff;
 		width: 100%;
-		padding: 20px;
-		padding-bottom: 40px;
+		padding: 40px 20px 40px;
 
 		z-index: 0;
 		
@@ -342,7 +414,7 @@ ul {
 	}
 
 	.header__instagram {
-		margin-top: 0px;
+		margin: 0 10px 0 0;
 		width: 50px;
 	}
 
@@ -361,7 +433,7 @@ ul {
 		padding: 30px 15px;
 	}
 
-	.menu__btn {
+	.hamburger {
 		display: block;
 	}
 	
@@ -389,7 +461,7 @@ ul {
 		display: block !important;
 	}
 
-	.menu__btn {
+	.hamburger {
 		display: none;
 	}
 }
