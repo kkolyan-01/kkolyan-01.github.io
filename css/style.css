@@ -169,21 +169,26 @@ ul {
 	font-size: 220px;
 }
 
-
-.main__bg {
-	background-image: url("../images/main_bg.png");
-	background-repeat: no-repeat;
-	background-position: bottom right;
+.main__border {
 	min-height: 100vh;
-	
-	display: flex;
-	align-items: center;
-	background-size: auto 100%;
+	border-top: dashed 4px #f56387;
+	border-bottom: dashed 4px #f086de;
+
+	background-image: url("../images/main_bg.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 .main__hair-bar {
-	padding-left: 50px;
+	padding: 100px 0 0 50px;
 }
+
+.main__hair-bar img {
+	block-size: 730px;
+}
+
+
 
 .colors {
 	background-color: #f8f8f8;
@@ -352,6 +357,11 @@ ul {
 	.price__text img{
 		width: 90%;
 	}
+
+	.main__hair-bar img{
+		width: 80%;
+		height: 80%;
+	}
 }
 
 
@@ -430,8 +440,26 @@ ul {
 		block-size: 50px;
 		margin: 5px 5px 0 0;
 	}
+	.hair-bar {
+		min-height: auto;
+		
+	}
 
+	.main__hair-bar {
+		padding: 100px 0 30px 0;
+	}
+	.main__border {
+		min-height: auto;
+		border-top: dashed 4px #f56387;
+		border-bottom: dashed 4px #f086de;
+	
+		background-image: url("../images/main_bg.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
 
+		text-align: center;
+	}
 
 	.header__menu-item a {
 		padding: 30px 15px;
@@ -442,11 +470,7 @@ ul {
 	}
 	
 	.main {
-		margin-left: 0;
-	}
-
-	.hair-bar {
-		padding-top: 120px;
+		margin: 0px;
 	}
 
 	.colors__bg {
